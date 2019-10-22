@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Shotumi</title>
+        
+        <!-- Magnific Popup core CSS file // changer chemin d'accés-->
+        <link rel="stylesheet" href='./magnific-popup.css'>
+
+       
+
+        <!-- Magnific Popup core JS file // changer chemin d'accés-->
+        <script src="./jquery.magnific-popup.min.js"></script>
+        <script>$(document).ready(function() {
+        $('.image-link').magnificPopup({type:'image'});
+        });</script>
+        
+        
+        <!--bxslider-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script>
+        $(function(){
+          $('.bxslider').bxSlider({
+            mode: 'fade',
+            captions: true,
+            slideWidth: 800,
+            speed:4000
+          });
+        });</script>
+            
+        
+        
+        <!-- Plugin apparation texte-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        
+        <!-- Font Awesome : https://fontawesome.com/start -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        
+        <!-- Police d'écriture -->
+        <link rel="stylesheet" href="./style.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+<br>
+     <br>
+     <br>
+      
+       <main id="conteneur"> 
+              <!-- main ou div ne change pas grand chose dans ce cas ci-->
+               <article id="pitch">
+
+                   <img id='title' src="./title.png" alt="Title"> 
+                   
+                    <h3>'Nous trouverons la planète Atlandide00'</h3>
+                   
+                     
+                    <br>
+                    <br>
+                    
+
+                   <p id='date'>Date de sortie : 2019</p>
+                   
+                    <br> 
+                    <br>
+                    <br> 
+                   
+                   <div id="photodefile">
+                    <div class="bxslider">
+                      <div><img src="./gallery/screentitle.png" title="Shotumi, écran titre"></div>
+                      <div><img src="./gallery/concept.png" title="Vaisseau et missile"></div>
+                      
+                    </div>
+                   </div>
+                   
+                   <br>
+                   <br>
+                   <br>
+                   
+                   <h2 id="aproposdujeu" >Shotumi</h2>
+                   <p data-aos="fade-up">
+                        « Shotumi, un shooter de l'espace aux couleurs océanique. » 
+                    <br>
+                       Il s'agit d'un jeu vidéo de type Space Shooter où le principe est de détruire tous les astéroïdes qui arrivent sur soi avant qu'ils ne vous détruisent. Vous possedez un nombre de vie limitée et vous l'aurez compris vous devez survivre le plus longtemps possible dans cette eau spatiale (pas en apnée attention).
+                   </p>
+                        
+                    
+  
+                    <br>
+                    <br>
+                    <br>
+                    <br> 
+                    
+                    
+               </article>
+                
+                
+                    
+                
+               <div class="screenshot">
+                    <img src="./screenshot.png" alt="Screenshot">                
+                </div>
+
+
+
+                <div id="video">
+<!-- ToDo : video -->
+                    <iframe src="https://www.youtube.com/embed/cZfsnA7dAHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>             
+                </div> 
+
+               <article id="team">
+                   <h2>La Team</h2>
+                   
+                        <div data-aos="fade-up">
+                    
+                   <p>6 membres, une équipe...</p>
+
+                   <ul>
+                       <li>Auriculaire</li>
+                       <li>Pouce</li>
+                       <li>Majeur</li>
+                       <li>Annulaire</li>
+                       <li>Index</li>
+                       <li>Brainosaure</li>
+
+                   </ul>
+                       </div>
+               </article>
+
+                <article id="download">
+                    <h2>Download here</h2>
+
+                    <p data-aos="fade-up">Sur <a href="https://vanyl.itch.io/" id="lienlisible" onclick="window.open(this.href); return false;">Itch.io</a></p>
+                </article>
+
+                <article id='info'>
+                <br>
+                    <br>
+                    <br>
+                    <br> 
+                    <br>
+                    <br>     
+                    <h2 id="aproposdujeu" >À propos du jeu</h2>
+                    <p data-aos="fade-up">Shotumi est jeu qui a été developpé en langage Python lors de ma formation Game Developer à <a href="https://www.interface3.be/fr/formation/game-developer" id="lienlisible" onclick="window.open(this.href); return false;">Interface3</a>.  
+                   <br>
+                   J'ai choisi un thème relié à l'océan afin de pouvoir y intégrer un requin baleine, un poisson marin qui me fascine.
+                   Pour le vaisseau requin baleine je me suis inspirée notamment d'<a href="http://www.abzugame.com/" id="lienlisible" onclick="window.open(this.href); return false;">Abzû</a>, un jeu vidéo du studio Giant Squid où l'on nage dans l'océan ainsi que des tatouages polynésiens pour les dessins sur le vaisseau.</p>
+                    
+                    
+                    
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <div class = "inspiration">
+                    
+                    <div data-aos="zoom-in"><a href="./gallery/whaleshark1.jpg" class="image-link" onclick="window.open(this.href); return false;"><img src="thumbnails/whaleshark1.jpg" alt="Un requin baleine"></a></div>
+                    
+                    <div data-aos="zoom-in"><a href="./gallery/abzul.jpg" class='image-link' onclick="window.open(this.href); return false;"><img src="./thumbnails/abzul.jpg" alt="ABZÛ du studio Giant Squid "></a></div>
+                    
+                    
+                     
+                     
+                    <div data-aos="zoom-in"><a href="./gallery/maoritatoo.jpg" class="image-link" onclick="window.open(this.href); return false;"><img src="thumbnails/maoritatoo.jpg" alt="Des tatouages polynésiens"></a></div>
+
+                     </div>
+                      
+                    <br>
+                    <br> 
+                    <br>
+                    <br> 
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br> 
+                                    
+                </article>
+
+                <article id="social">
+                    <h2>Vagues sociales</h2>
+
+                    <p data-aos="fade-up">Come to the ocean side</p>
+
+                    <p>
+                       <a href="https://twitter.com/yavananas" onclick="window.open(this.href); return false;"><i class="fab fa-2x fa-twitter-square"></i></a>
+                       
+                       
+                       <a href="https://www.instagram.com/fleurdevanyl/?hl=en
+                       " onclick="window.open(this.href); return false;"><i class="fab fa-2x fa-instagram"></i></a>
+                       
+                        <a href="https://www.facebook.com/fleurdevanyl" onclick="window.open(this.href); return false;"><i class="fab fa-2x fa-facebook-square"></i></a>
+                       
+                    </p>
+                </article>
+
+<!--plugin de MailChimp-->
+               
+                <article id="news">
+                    <div id="mc_embed_signup">
+                        <form action="https://wouf.us20.list-manage.com/subscribe/post?u=c4ab81d6042298f3dfb65f38d&amp;id=441e485791" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+
+                                    <h2>News about Shotumi</h2>
+
+                                <div class="mc-field-group">
+                                    <label for="mce-EMAIL">Email Address </label>
+                                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                                </div>
+
+                                <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>    
+
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c4ab81d6042298f3dfb65f38d_441e485791" tabindex="-1" value=""></div>
+
+                                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                            </div>
+                        </form>
+                    </div>
+                    
+               <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+               <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                </article>
+
+               
+                <article id="contact">
+                    <h2>Notre Channel</h2>
+
+                    <p data-aos="fade-up" >Lien vers notre Discord</p>
+                    
+                    <a href="http://Discord.com" onclick="window.open(this.href); return false;"><i class="fab fa-3x fa-discord"></i></a>
+                    <br>
+                    <br>
+                    <br>
+                    <br> 
+                
+                </article>
+
+        </main>
+          
+           <script src="https://unpkg.com/aos@next/dist/aos.js">
+           </script>
+           <script>
+                AOS.init();
+           </script>
+   
+   
+    </body>
+</html>

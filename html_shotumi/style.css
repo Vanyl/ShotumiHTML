@@ -1,0 +1,238 @@
+body {
+    font-family: verdana, sans-serif;
+    margin:0;
+    background-color: #1341a8ff;
+    background-image: url("background5.png");
+    background-attachment: scroll;
+    background-position: center top;
+    background-repeat: repeat-x;
+}
+
+article {
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Reenie Beanie';
+    color: #fff;
+    margin-top: 0;
+    font-size: 30px;
+}
+
+h2 {
+    font-size:50px;
+}
+
+#aproposdujeu {
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Homemade Apple';
+   
+}
+
+p, ul{
+    font-family: 'Poiret One';
+    font-size: 20px;
+    font-weight: bold;
+    line-height:35px; 
+    text-align: justify;
+    
+}
+
+
+/*Screenshot*/
+#screenshot {
+    padding:0;
+}
+
+.inspiration {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*Newsletter*/
+input, button {
+    padding: 10px;
+    border: none;
+}
+
+input {
+    border-radius: 3px 0 0 3px;
+}
+
+button {
+    border-radius: 0 3px 3px 0;
+    background-color: #4981db;
+    font-weight: bold;
+    color: #d3e6f5;
+}
+
+
+#download, #social {
+    
+}
+
+#date {
+    text-align: right;
+}
+
+/* Icones */
+
+
+
+.fab {
+    color: white;
+}
+
+/*Combien de ligne et de colonne je veux ? Unité ? (px, ´%, fr[fraction])*/
+#conteneur { /* on donne une largeur, etc fixe, conteneur représente parent*/
+    margin:0 auto;
+    display: grid;
+    width: 800px;
+    height: 1600px ;
+    background-color: rgba(234, 216, 216, 0);
+    
+    grid-template-columns: 2fr 1fr 1fr; /*ma 1ère colonne est 2x plus large que les deux autres*/
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr  ; /*5 lignes font 20% de haut*/
+    grid-template-areas:
+        /* comme j'ai 3 cellules je mets 3 espaces, je sépare en colone pour m'y retrouver*/
+        "monPitch  monPitch  monPitch"
+        "myScreen  myVideo   myVideo"
+        'info      info      info'
+        "maTeam    maTeam    monDown" /*donner un nom/identifiant à chaque cellule*/
+        "myNews    myNews    mySocial"
+        "myContact myContact mySocial"
+}
+
+/*Ici ci-dessous, les 8 enfants*/
+
+#pitch {
+    background-color: transparent;
+    grid-area: monPitch;
+}
+
+
+#team {
+    background-color: transparent;
+    grid-area: maTeam;
+}
+
+.screenshot {
+    background-color: transparent;
+    grid-area: myScreen;
+}
+
+#title {
+    display:block;
+    max-width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+
+    
+}
+
+#info {
+    background-color: transparent;
+    grid-area: info;
+    
+}
+/*rgba(19, 65, 168, 0.94)*/
+#download {
+    background-color: transparent;
+    grid-area: monDown;
+    
+}
+
+#lienlisible {
+    color: white;
+}
+
+#video {
+    background-color: transparent;
+    grid-area: myVideo;
+}
+
+#social {
+    
+    grid-area: mySocial;
+}
+
+#news {
+    background-color: rgba(234, 216, 216, 0);
+    grid-area: myNews;
+}
+
+#contact {
+    background-color: #1341a8ff;
+    grid-area: myContact;
+}
+
+@media (orientation: portrait) {
+    h1, h2 {
+        color: white;
+    }
+}
+
+/* bxslider */
+.bx-wrapper {
+    background: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+    max-width: 800px !important;
+    width: none;
+    
+}
+
+#3289 {
+    width: none;
+}
+
+#3290 {
+    width: none;
+}
+
+#photodefile {
+        width: 1000px;
+    
+}
+
+
+
+
+@media (max-width:600px){
+    #conteneur { 
+        margin: 0 auto;
+        display: grid;
+        width: 95%;
+        height: 2400px ;
+        background-color: #1341a8ff;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-areas:
+            "monPitch"  
+            'vide'
+            "myScreen"  
+            "myVideo"
+            'info'
+            "maTeam"        
+            "monDown" 
+            "myNews"    
+            "mySocial"
+            "myContact";
+}
